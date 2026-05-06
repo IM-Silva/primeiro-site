@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+body {
+    background: rgb(150,179,255);
+    background: radial-gradient(circle, rgba(150,179,255,1) 0%, rgba(0,93,93,1) 100%);
+}
+header{
+    height:auto;
+    padding: 2%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+}
+li {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+li:hover {
+    color: black;
+}
+main{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: white;
+    width: 80rem;
+    height: 30rem;
+    border-radius: 10px;
+    display: flex;
+}
+.content {
+    background-color: #000424;
+    width: 50%;
+    height: auto;
+    border-radius: 10px 0  0 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around
+}
+p {
+    margin-left: 40px;
+}
+.content-2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#text, #email{
+    height: 2rem;
+    width: 100%;
+    background-color: #ececec;
+    border: none;
+    border-radius: 5px;
+}
+#number {
+    height: 2rem;
+    width: 400px;
+    background-color: #ececec;
+    border: none;
+    border-radius: 5px;
+}
+#textarea {
+    background-color: #ececec;
+    border: none;
+    border-radius: 5px;
+}
+.button {
+    background-color: #ececec;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.7rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    outline: none;
+    transition: .5s;
+}
+.button:hover {
+    color:white;
+    background-color: #000424;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.grupo {
+    width: 4rem;
+    height: 1.7rem;
+    background-color: #ececec;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.grupo:hover {
+    background-color: #00aeed;
+    color: white;
+}
+@media (max-width:768px){
+    main {
+        height: auto;
+        padding: 2rem 0;
+    }
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .content, .content-2 {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        padding: 2rem 0;
+    }
+    .content-2 {
+        border-radius: 0 0 10px 10px
+    }
+    #text, #email, #number, #textarea {
+        width: 100%;
+        max-width: 20rem;
+    }
+    #content, #content-2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px;
+    }
+    p {
+        margin: 0 2rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    form {
+        align-items: start;
+        gap: 0.8rem;
+    }
+    .icones img {
+        margin-top: 1.3rem;
+    }
+    .button{
+        width: 100%;
+    }
+}

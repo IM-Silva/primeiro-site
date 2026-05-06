@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0,0,0);
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgba(0,12,102,1) 45%, rgba(203,14,14,1) 83%, rgba(254,255,20,1) 100%);
+    padding: 0.2%;
+}
+nav {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+li {
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+li:hover {
+    color: black;
+}
+body {
+    background: rgb(134,234,255);
+    background: radial-gradient(circle, rgba(134,234,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+.actor-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.cards {
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap: 2rem;
+}
+.card {
+    width: 100%;
+    height: 15rem;
+    background-size: cover;
+    background-position: 50% 20%;
+    border-radius: 5px;
+}
+.foto1 {
+    background-image: url('https://www.cinemaescrito.com/wp-content/uploads/2017/06/ww-910x515.jpg');
+}
+.foto2 {
+    background-image: url('https://veja.abril.com.br/wp-content/uploads/2017/06/blogib_mulher-maravilha_feat.jpg');
+}
+.foto3 {
+    background-image: url('http://conteudo.imguol.com.br/c/entretenimento/0f/2017/06/15/gal-gadot-com-sua-godkiller-escondida-em-mulher-maravilha-1497573246914_v2_1499x1000.jpg');
+}
+.foto4 {
+    background-image: url('https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/1752/mulher-maravilha-3-sera-lancado-entenda-as-ultimas-noticias-04d198d47b702b.jpg');
+}
+.foto5 {
+    background-image: url('https://veja.abril.com.br/wp-content/uploads/2017/05/gal-gadot-mulher-maravilha-20151123-030.jpg');
+}
+.foto6 {
+    background-image: url('https://jornadageek.ig.com.br/wp-content/uploads/2020/08/Imagem-do-filme-Mulher-Maravilha-1984.jpg');
+}
+.foto7 {
+    background-image: url('https://cdn.ome.lt/yC-Pg5IDy99ZiqsL1pCtpMqNeyY=/fit-in/837x500/smart/uploads/conteudo/fotos/ssss.jpg');
+}
+.foto8 {
+    background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2016/12/ww.jpg');
+}
+.foto9 {
+    background-image: url('https://3.bp.blogspot.com/-sHwuRefaEBA/WWTYC-ihwiI/AAAAAAAAEhE/TEzNBC6JrmknCzUMauEmkOWtdIKKMc9sACLcBGAs/s1600/001.png');
+}
+.foto10 {
+    background-image: url('https://i0.wp.com/heroisx.com/wp-content/uploads/2017/06/Mulher-Maravilha-Gal-Gadot-matadora-de-deuses.jpg?resize=640%2C320');
+}
+.foto11 {
+    background-image: url('https://conteudo.imguol.com.br/c/entretenimento/79/2017/06/07/gal-gadot-em-cena-de-mulher-maravilha-1496851000925_v2_450x337.jpg');
+}
+.foto12 {
+    background-image: url('https://quintacapa.com.br/wp-content/uploads/2021/01/Amazonas_DC_destaque_quinta_capa.png');
+}
+footer {
+    background: rgb(0,0,0);
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgba(0,12,102,1) 45%, rgba(203,14,14,1) 83%, rgba(254,255,20,1) 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding:0.5%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #logo-01, #logo-02{
+        display: none;
+    }
+    li{
+        font-size: 0.8rem;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    footer{
+        font-size: 0.5rem;
+    }
+    #logo-03{
+        width: 12%;
+        margin-top: 10%;
+    }
+}

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Kdam Thmor Pro', sans-serif
+}
+header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0,0,0);
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgba(0,12,102,1) 45%, rgba(203,14,14,1) 83%, rgba(254,255,20,1) 100%);
+    padding: 0.2%;
+}
+nav {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+li {
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .5s;
+}
+li:hover {
+    color: black;
+}
+body {
+    background: rgb(94,161,175);
+    background: radial-gradient(circle, rgba(94,161,175,1) 0%, rgba(0,0,0,1) 100%);
+    color: #fff;
+}
+#destaque-01 {
+    height: auto;
+    width: 50%;
+    padding: 0 4%;
+}
+.texto-1 {
+    height: 40rem;
+    display: flex;
+}
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 40px;
+}
+p {
+    width: 80%;
+    font-size: 1.1rem;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.texto-2 {
+    height: 40rem;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+.foto1 {
+    background-image: url('https://sm.ign.com/ign_pt/screenshot/default/gettyimages-688494296-h-2017_dsku.jpg');
+    border-radius: 25px;
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    background-position: 50% 50%;
+    margin-top: 4%;
+}
+.texto-3 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+}
+.foto2 {
+    background-image: url('http://nodeoito.com/wp-content/uploads/2017/05/2017_gal_gadot_wonder_woman-wide-600x375.jpg');
+    border-radius: 25px;
+    background-size: cover;
+    height: 30rem;
+    width: 90%;
+    background-position: 50% 30%;
+    margin: 4% 2% ;
+}
+.texto-4{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+.link {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link p{
+    width: 7%;
+}
+.link a{
+    width: 5%;
+}
+#no-de-oito {
+    border-radius: 100%;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+footer {
+    background: rgb(0,0,0);
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgba(0,12,102,1) 45%, rgba(203,14,14,1) 83%, rgba(254,255,20,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0.4%;
+}
+@media (max-width:768px){
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #logo-01, #logo-02{
+        display: none;
+    }
+    .texto-1, .texto-2, .texto-3 {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 15% 0;
+    }
+    #destaque-01, .foto1, .foto2 {
+        width: 90% !important; 
+        height: 25rem;
+        margin: 1rem 0;
+    }
+    .texto {
+        gap: 2rem;
+        width: 90%;
+        text-align: center;
+    }
+    p {
+        width: 100%;
+        text-align: justify;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .link {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .link p, .link a {
+        width: auto;
+    }
+    #no-de-oito {
+        width: 80px;
+    }
+    footer{
+        font-size: 0.5rem;
+    }
+}
